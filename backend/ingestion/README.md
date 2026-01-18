@@ -43,6 +43,3 @@ uv sync
 
 **Why this is needed:** macOS ships with a version of SQLite that doesn't allow loading extensions, and pyenv-installed Python also lacks the `--enable-loadable-sqlite-extensions` compilation flag.
 
-### Linux/Dev Containers
-
-Python on Linux (Debian, Ubuntu, etc.) typically has SQLite extension support enabled by default. The Microsoft devcontainer Python images (`mcr.microsoft.com/devcontainers/python`) work out of the box.
