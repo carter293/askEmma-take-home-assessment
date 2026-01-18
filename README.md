@@ -108,7 +108,8 @@ uv sync
 
 # (Optional) Ingest policies if database doesn't exist
 # This reads policy files and populates the vector database
-python ingestion/ingestion.py
+# Please see read me at `backend/ingestion/README.md` for details to get this working on MacOS
+uv run ingestion/ingestion.py
 
 # Run development server
 uv run fastapi dev main.py
@@ -125,7 +126,7 @@ cd frontend
 # Install dependencies
 npm install
 
-# Generate API types from backend OpenAPI spec
+# (Optional) Generate API types from backend OpenAPI spec - note backend has to be running 
 npm run generate:api
 
 # Run development server
